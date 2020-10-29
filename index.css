@@ -1,0 +1,27 @@
+div.video-div {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+div.status-div {
+    z-index: 1;
+    grid-area: 1 / 2 / 2 / 3 ;
+    justify-self: center;
+    align-self: center;
+    color: black;
+    font-size: 40px;
+    -webkit-text-stroke: 1px white;
+}
+
+.video-element {
+    z-index: 0;
+    grid-area: 1 / 1 / 4 / 4 ;
+    justify-self: center;
+    align-self: start;
+    height: 360px;
+}
+
+#maintd {
+    width: 640px;
+}
